@@ -1,0 +1,13 @@
+confige dirs []
+/home/futura/Desktop/GoogleDrive/CLEAR SERVIDOR ARQUIVOS Created Dir as mountpoint dir
+/home/futura/Desktop/GoogleDrive/COMERCIAL CLEAR & VEICULAR Created Dir as mountpoint dir
+/home/futura/Desktop/GoogleDrive/ENGENHARIA CLEAR Created Dir as mountpoint dir
+/home/futura/Desktop/GoogleDrive/MARKETING CLEAR & VEICULAR Created Dir as mountpoint dir
+/home/futura/Desktop/GoogleDrive/PRODUTO CLEAR +VEICULAR Created Dir as mountpoint dir
+/home/futura/Desktop/GoogleDrive/SUPORTE CLEAR & VEICULAR Created Dir as mountpoint dir
+issued command  /usr/bin/google-drive-ocamlfuse -label "CLEAR SERVIDOR ARQUIVOS" "/home/futura/Desktop/GoogleDrive/CLEAR SERVIDOR ARQUIVOS"
+issued command  /usr/bin/google-drive-ocamlfuse -label "COMERCIAL CLEAR & VEICULAR" "/home/futura/Desktop/GoogleDrive/COMERCIAL CLEAR & VEICULAR"
+issued command  /usr/bin/google-drive-ocamlfuse -label "ENGENHARIA CLEAR" "/home/futura/Desktop/GoogleDrive/ENGENHARIA CLEAR"
+issued command  /usr/bin/google-drive-ocamlfuse -label "MARKETING CLEAR & VEICULAR" "/home/futura/Desktop/GoogleDrive/MARKETING CLEAR & VEICULAR"
+issued command  /usr/bin/google-drive-ocamlfuse -label "PRODUTO CLEAR +VEICULAR" "/home/futura/Desktop/GoogleDrive/PRODUTO CLEAR +VEICULAR"
+issued command  /usr/bin/google-drive-ocamlfuse -label "SUPORTE CLEAR & VEICULAR" "/home/futura/Desktop/GoogleDrive/SUPORTE CLEAR & VEICULAR"
