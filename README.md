@@ -3,9 +3,10 @@
 Utilizando codigo de https://github.com/astrada/google-drive-ocamlfuse
 
 # Usage
-1. Instalar ocamlfuse com `ocamlfuse_installation.py`
-1. Em `global_vars.py` definir USER e DESKTOP corretamente
-2. Verificar em `output.txt` os drives desejados, 
+![Final mounted drives](./OcamlFuse.gif)
+1. Instalar ocamlfuse com `python3 ocamlfuse_installation.py`
+1. Definir em `global_vars.py` definir USER e DESKTOP de acordo com o computador utilizado
+2. Verificar em `resources/config.txt` os drives desejados, estes serão os drives utilizados
 	- para recarregar os drives padrao da clear executar `python3 get_labels_and_ids.py`
 2. `python3 install_on_this_session.py` - vai instalar somente esta sessao, deve-se verificar que o mountpoint criado esta ok e de acordo com o MOUNT_PATH
 	- O porcesso ira pedir o usuaário logado, utilize o usuário do indivíduo
@@ -36,3 +37,4 @@ Utilizando codigo de https://github.com/astrada/google-drive-ocamlfuse
 - 23/08/2021 - refatorando com diretorios e modularizacao, preciso testar as separacoes.
 - 05/10/2021 - refatorando tudo e retestando ate o mount, automount precisa de testes
 - 06/10/2021 - funcoes core testadas ok, lancamento do alfa para testes.
+- 11/10/2021 - Correcao de avisos no terminal mounts do .proflie executando em subshell, Upload de repo no Github

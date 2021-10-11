@@ -17,7 +17,5 @@ ids = list(drives_ids.values())
 
 with open(os.path.join(f"/home/{USER}",".profile"),'a') as install_file:
 	for label in labels:
-		command = f'mount | grep "{os.path.join(MOUNT_PATH,label)}" > /dev/null || /usr/bin/google-drive-ocamlfuse -label "{label}" "{os.path.join(MOUNT_PATH,label)}" & \n'
+		command = f'(mount | grep "{os.path.join(MOUNT_PATH,label)}" > /dev/null || /usr/bin/google-drive-ocamlfuse -label "{label}" "{os.path.join(MOUNT_PATH,label)}" &) \n'
 		install_file.write(command)
-
-	# os.system(f''' 'mount | grep "/home/clear/DESKTOP/{label}" > /dev/null || /usr/bin/google-drive-ocamlfuse -label "{label}" "/home/clear/{DESKTOP}/GoogleDrive/{label}" & ' >> ~/.profile''')
