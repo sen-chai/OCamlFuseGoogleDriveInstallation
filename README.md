@@ -2,12 +2,14 @@
 
 Utilizando codigo de https://github.com/astrada/google-drive-ocamlfuse
 
-# Usage
 ![Final mounted drives](./OcamlFuse.gif)
-1. Definir em `global_vars.py` definir USER e DESKTOP de acordo com o computador utilizado
-2. Verificar em `resources/labels_ids.txt` os drives desejados, estes serão os drives utilizados
-	- para recarregar os drives padrao da clear executar `python3 get_labels_and_ids.py`
-3. Instalar ocamlfuse com `python3 ocamlfuse_installation.py`, isso deve fazer todas as etapas de instalacao
+# Uso 
+1. Dentro da pasta `drives_ids` definir um arquivo .txt que atenda aos installs desejados, o arquivo nao deve conter as linhas vazias
+2. Instalar ocamlfuse e os drives compartilhados correspondentes executando `python3 installation.py < arquivo de labels e ids >`, isso deve fazer todas as etapas de instalacao.
+	Exemplo : `python3 installation.py ./drives_ids/engenharia_clear.txt`
+3. Se está instalando pela primeira vez, aceite as instalacoes do app
+4. Permita acesso no navegador de acordo com a conta que já tem acesso ao drive de equipe.
+5. Para que o processo seja totamente finalizado não interrompa o processo, espere executar ate o final
 
 ## Advanced mode
 1. `python3 install_on_this_session.py` - vai instalar somente esta sessao, deve-se verificar que o mountpoint criado esta ok e de acordo com o MOUNT_PATH

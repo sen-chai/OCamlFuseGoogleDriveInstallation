@@ -3,10 +3,11 @@ from connection import *
 from get_labels_and_ids import readLabelsIds
 from prepare_mount import *
 from global_vars import *
+import sys
 
 #todo verificar se .profile esta limpo antes de entrar
 
-drives_ids = readLabelsIds('./data/labels_ids.txt')
+drives_ids = readLabelsIds(sys.argv[1])
 labels = list(drives_ids.keys())
 ids = list(drives_ids.values())
 

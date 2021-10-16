@@ -1,8 +1,10 @@
 import os
 import shutil
+from connection import unmountAllConnectedDrives
 
 #* Delete existentes, e cria novos mount paths
 def createAllMountDirs(drives,mount_path):
+	unmountAllConnectedDrives()
 	#? remove anyway
 	if os.path.exists(mount_path):
 		shutil.rmtree(mount_path)
