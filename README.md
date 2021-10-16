@@ -4,13 +4,15 @@ Utilizando codigo de https://github.com/astrada/google-drive-ocamlfuse
 
 # Usage
 ![Final mounted drives](./OcamlFuse.gif)
-1. Instalar ocamlfuse com `python3 ocamlfuse_installation.py`
 1. Definir em `global_vars.py` definir USER e DESKTOP de acordo com o computador utilizado
-2. Verificar em `resources/config.txt` os drives desejados, estes serão os drives utilizados
+2. Verificar em `resources/labels_ids.txt` os drives desejados, estes serão os drives utilizados
 	- para recarregar os drives padrao da clear executar `python3 get_labels_and_ids.py`
-2. `python3 install_on_this_session.py` - vai instalar somente esta sessao, deve-se verificar que o mountpoint criado esta ok e de acordo com o MOUNT_PATH
+3. Instalar ocamlfuse com `python3 ocamlfuse_installation.py`, isso deve fazer todas as etapas de instalacao
+
+## Advanced mode
+1. `python3 install_on_this_session.py` - vai instalar somente esta sessao, deve-se verificar que o mountpoint criado esta ok e de acordo com o MOUNT_PATH
 	- O porcesso ira pedir o usuaário logado, utilize o usuário do indivíduo
-3.  `python3 install_automount.py` - isso permite que depois de reiniciar as pastas sejam montadas sem problemas
+2.  `python3 install_automount.py` - isso permite que depois de reiniciar as pastas sejam montadas sem problemas
 
 ## Justificativa:
 - Insync é pesado, devido a sua up to date syncronization. Sempre que alguma alteração é feita, tudo é atualizado, e sincronizado
