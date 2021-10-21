@@ -13,6 +13,7 @@ os.system('sudo apt install python3-pip')
 os.system('pip3 install lxml')
 
 #* Configuracao dos drives
+os.system('google-drive-ocamlfuse')
 os.system(f'python3 install_for_session.py {labels_ids}')
 os.system(f'python3 install_automount.py {labels_ids}')
 
